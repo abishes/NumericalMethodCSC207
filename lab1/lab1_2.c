@@ -13,18 +13,18 @@ int main(){
         printf("derivative is zero at this point\n");
         return 1;
     }
-    int count=1;
+    int count=0;
     while(1){
         x1=x0-F(x0)/f(x0);
         if(fabs((x1-x0)/x1)<e){
-            printf("The root is %f",x1);
+            printf("The root is %f\n",x1);
             printf("No. of iteration %d",count);
             return 0;
         }
         else
             x0 =x1;
         count++;
-        if(count>20){
+        if(count>MAX){
             printf("The process doesn\'t converge\n");
             return 1;
     }

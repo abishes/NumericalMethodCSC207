@@ -9,7 +9,7 @@ int main(){
     float x0, x1;
     printf("Enter initial guess\n");
     scanf("%f",&x0);
-    int count=1;
+    int count=0;
     while(1){
         x1=g(x0);
         if(fabs(x1-x0)<e){

@@ -23,7 +23,7 @@ int main(){
             x2=x3;
         }
         count++;
-        if(count>20){
+        if(count>MAX){
             printf("The process doesn\'t converge\n");
             return 1;
     }
